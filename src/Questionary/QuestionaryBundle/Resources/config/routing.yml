@@ -1,0 +1,3 @@
+questionary_questionary_homepage:
+    path:     /
+    defaults: { _controller: QuestionaryQuestionaryBundle:Default:index }

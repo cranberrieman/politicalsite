@@ -1,3 +1,7 @@
+questionary_questionary:
+    resource: "@QuestionaryQuestionaryBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
