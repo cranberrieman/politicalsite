@@ -1,0 +1,10 @@
+questionary_homepage:
+    path:     /
+    defaults: { _controller: AppBundle:Questionary:index }
+
+questionary_show:
+    path:     /{id}
+    defaults: { _controller: AppBundle:Questionary:show }
+    requirements:
+        _method:  GET
+        id: \d+

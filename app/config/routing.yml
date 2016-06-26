@@ -1,6 +1,6 @@
-questionary_questionary:
-    resource: "@QuestionaryQuestionaryBundle/Resources/config/routing.yml"
-    prefix:   /
+questionary:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /questionary/
 
 app:
     resource: "@AppBundle/Controller/"
