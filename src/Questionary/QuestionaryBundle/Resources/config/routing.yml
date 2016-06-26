@@ -1,3 +1,10 @@
-questionary_questionary_homepage:
-    path:     /
-    defaults: { _controller: QuestionaryQuestionaryBundle:Default:index }
+QuestionaryQuestionaryBundle_Questionary_homepage:
+    path:     /questionary/
+    defaults: { _controller: QuestionaryQuestionaryBundle:Questionary:index }
+
+QuestionaryQuestionaryBundle_Questionary_show:
+    path:     /questionary/{id}
+    defaults: { _controller: QuestionaryQuestionaryBundle:Questionary:show }
+    requirements:
+        _method:  GET
+        id: \d+

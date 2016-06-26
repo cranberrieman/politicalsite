@@ -18,6 +18,11 @@ class Questionary
     protected $id;
 
     /**
+     * @ORM\Column(type="string", length=50)
+     */
+    protected $name;
+
+    /**
      * @ORM\Column(type="string", length=100)
      */
     protected $description;
@@ -39,6 +44,30 @@ class Questionary
     {
         return $this->id;
     }
+
+	/**
+	 * Set name
+	 *
+	 * @param string $name
+	 *
+	 * @return Questionary
+	 */
+	public function setName($name)
+	{
+		$this->name = $name;
+
+		return $this;
+	}
+
+	/**
+	 * Get name
+	 *
+	 * @return string
+	 */
+	public function getName()
+	{
+		return $this->name;
+	}
 
     /**
      * Set description
@@ -87,4 +116,5 @@ class Questionary
     {
         return $this->created;
     }
+
 }
