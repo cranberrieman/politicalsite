@@ -1,10 +1,24 @@
+#QUESTIONARY
+#---------------------
 questionary_homepage:
-    path:     /
+    path:     questionary/
     defaults: { _controller: AppBundle:Questionary:index }
 
 questionary_show:
-    path:     /{id}
+    path:     questionary/{id}
     defaults: { _controller: AppBundle:Questionary:show }
     requirements:
         _method:  GET
         id: \d+
+
+#END OF QUESTIONARY
+#---------------------
+
+#MAIN PAGES
+#---------------------
+page_index:
+    path:     /
+    defaults: { _controller: AppBundle:Page:index }
+
+#END OF MAIN PAGES
+#---------------------
