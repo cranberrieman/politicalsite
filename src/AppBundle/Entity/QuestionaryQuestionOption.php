@@ -6,9 +6,9 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="question")
+ * @ORM\Table(name="questionary_question_option")
  */
-class Question
+class QuestionaryQuestionOption
 {
 	/**
 	 * @ORM\Id
@@ -20,7 +20,7 @@ class Question
 	/**
 	 * @ORM\Column(type="integer")
 	 */
-	protected $questionaryid;
+	protected $questionid;
 
 	/**
 	 * @ORM\Column(type="string")
@@ -38,27 +38,27 @@ class Question
     }
 
     /**
-     * Set questionaryid
+     * Set questionid
      *
-     * @param integer $questionaryid
+     * @param integer $questionid
      *
-     * @return Question
+     * @return QuestionOption
      */
-    public function setQuestionaryid($questionaryid)
+    public function setQuestionid($questionid)
     {
-        $this->questionaryid = $questionaryid;
+        $this->questionid = $questionid;
 
         return $this;
     }
 
     /**
-     * Get questionaryid
+     * Get questionid
      *
      * @return integer
      */
-    public function getQuestionaryid()
+    public function getQuestionid()
     {
-        return $this->questionaryid;
+        return $this->questionid;
     }
 
     /**
@@ -66,7 +66,7 @@ class Question
      *
      * @param string $text
      *
-     * @return Question
+     * @return QuestionOption
      */
     public function setText($text)
     {
