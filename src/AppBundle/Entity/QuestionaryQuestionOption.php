@@ -23,9 +23,9 @@ class QuestionaryQuestionOption
 	protected $questionid;
 
 	/**
-	 * @ORM\Column(type="string")
+	 * @ORM\Column(type="integer")
 	 */
-	protected $text;
+	protected $answerid;
 
     /**
      * Get id
@@ -62,26 +62,26 @@ class QuestionaryQuestionOption
     }
 
     /**
-     * Set text
+     * Set answerid
      *
-     * @param string $text
+     * @param integer $answerid
      *
-     * @return QuestionOption
+     * @return QuestionaryQuestionOption
      */
-    public function setText($text)
+    public function setAnswerid($answerid)
     {
-        $this->text = $text;
+        $this->answerid = $answerid;
 
         return $this;
     }
 
     /**
-     * Get text
+     * Get answerid
      *
-     * @return string
+     * @return integer
      */
-    public function getText()
+    public function getAnswerid()
     {
-        return $this->text;
+        return $this->answerid;
     }
 }
