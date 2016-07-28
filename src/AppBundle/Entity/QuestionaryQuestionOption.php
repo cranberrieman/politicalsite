@@ -28,6 +28,11 @@ class QuestionaryQuestionOption
 	protected $answerid;
 
     /**
+     * @ORM\Column(type="string")
+     */
+    protected $text;
+
+    /**
      * Get id
      *
      * @return integer
@@ -83,5 +88,29 @@ class QuestionaryQuestionOption
     public function getAnswerid()
     {
         return $this->answerid;
+    }
+
+    /**
+     * Set text
+     *
+     * @param string $text
+     *
+     * @return QuestionaryQuestionOption
+     */
+    public function setText($text)
+    {
+        $this->text = $text;
+
+        return $this;
+    }
+
+    /**
+     * Get text
+     *
+     * @return string
+     */
+    public function getText()
+    {
+        return $this->text;
     }
 }
