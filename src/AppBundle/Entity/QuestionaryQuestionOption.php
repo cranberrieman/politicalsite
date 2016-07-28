@@ -32,6 +32,11 @@ class QuestionaryQuestionOption
      */
     protected $text;
 
+	/**
+	 * @ORM\Column(type="integer")
+	 */
+	protected $ordernumber;
+
     /**
      * Get id
      *
@@ -112,5 +117,29 @@ class QuestionaryQuestionOption
     public function getText()
     {
         return $this->text;
+    }
+
+    /**
+     * Set ordernumber
+     *
+     * @param integer $ordernumber
+     *
+     * @return QuestionaryQuestionOption
+     */
+    public function setOrdernumber($ordernumber)
+    {
+        $this->ordernumber = $ordernumber;
+
+        return $this;
+    }
+
+    /**
+     * Get ordernumber
+     *
+     * @return integer
+     */
+    public function getOrdernumber()
+    {
+        return $this->ordernumber;
     }
 }

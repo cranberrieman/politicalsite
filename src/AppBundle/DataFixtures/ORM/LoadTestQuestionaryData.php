@@ -27,19 +27,19 @@ class LoadTestQuestionaryData extends AbstractFixture implements FixtureInterfac
 		$questionaryQuestion1 = new QuestionaryQuestion();
 		$questionaryQuestion1->setQuestionaryid($questionary->getId());
 		$questionaryQuestion1->setText("Что делать?");
-		$questionaryQuestion1->setSerialnumber(1);
+		$questionaryQuestion1->setOrdernumber(1);
 		$manager->persist($questionaryQuestion1);
 
 		$questionaryQuestion2 = new QuestionaryQuestion();
 		$questionaryQuestion2->setQuestionaryid($questionary->getId());
 		$questionaryQuestion2->setText("Кто виноват?");
-		$questionaryQuestion2->setSerialnumber(2);
+		$questionaryQuestion2->setOrdernumber(2);
 		$manager->persist($questionaryQuestion2);
 
 		$questionaryQuestion3 = new QuestionaryQuestion();
 		$questionaryQuestion3->setQuestionaryid($questionary->getId());
 		$questionaryQuestion3->setText("Как дела?");
-		$questionaryQuestion3->setSerialnumber(3);
+		$questionaryQuestion3->setOrdernumber(3);
 		$manager->persist($questionaryQuestion3);
 
 		$manager->flush();
@@ -64,63 +64,63 @@ class LoadTestQuestionaryData extends AbstractFixture implements FixtureInterfac
 		$questionaryQuestionOption11->setQuestionid($questionaryQuestion1->getId());
 		$questionaryQuestionOption11->setText($answer1->getText());
 		$questionaryQuestionOption11->setAnswerid($answer1->getId());
-		$questionaryQuestionOption11->setSerialnumber(1);
+		$questionaryQuestionOption11->setOrdernumber(1);
 		$manager->persist($questionaryQuestionOption11);
 
 		$questionaryQuestionOption12 = new QuestionaryQuestionOption();
 		$questionaryQuestionOption12->setQuestionid($questionaryQuestion1->getId());
 		$questionaryQuestionOption12->setText($answer2->getText());
 		$questionaryQuestionOption12->setAnswerid($answer2->getId());
-		$questionaryQuestionOption12->setSerialnumber(2);
+		$questionaryQuestionOption12->setOrdernumber(2);
 		$manager->persist($questionaryQuestionOption12);
 
 		$questionaryQuestionOption13 = new QuestionaryQuestionOption();
 		$questionaryQuestionOption13->setQuestionid($questionaryQuestion1->getId());
 		$questionaryQuestionOption13->setText($answer3->getText());
 		$questionaryQuestionOption13->setAnswerid($answer3->getId());
-		$questionaryQuestionOption13->setSerialnumber(3);
+		$questionaryQuestionOption13->setOrdernumber(3);
 		$manager->persist($questionaryQuestionOption13);
 
 		$questionaryQuestionOption21 = new QuestionaryQuestionOption();
 		$questionaryQuestionOption21->setQuestionid($questionaryQuestion2->getId());
 		$questionaryQuestionOption21->setText($answer1->getText());
 		$questionaryQuestionOption21->setAnswerid($answer1->getId());
-		$questionaryQuestionOption21->setSerialnumber(3);
+		$questionaryQuestionOption21->setOrdernumber(3);
 		$manager->persist($questionaryQuestionOption21);
 
 		$questionaryQuestionOption22 = new QuestionaryQuestionOption();
 		$questionaryQuestionOption22->setQuestionid($questionaryQuestion2->getId());
 		$questionaryQuestionOption22->setText($answer2->getText());
 		$questionaryQuestionOption22->setAnswerid($answer2->getId());
-		$questionaryQuestionOption22->setSerialnumber(2);
+		$questionaryQuestionOption22->setOrdernumber(2);
 		$manager->persist($questionaryQuestionOption22);
 
 		$questionaryQuestionOption23 = new QuestionaryQuestionOption();
 		$questionaryQuestionOption23->setQuestionid($questionaryQuestion2->getId());
 		$questionaryQuestionOption23->setText($answer3->getText());
 		$questionaryQuestionOption23->setAnswerid($answer3->getId());
-		$questionaryQuestionOption23->setSerialnumber(1);
+		$questionaryQuestionOption23->setOrdernumber(1);
 		$manager->persist($questionaryQuestionOption23);
 
 		$questionaryQuestionOption31 = new QuestionaryQuestionOption();
 		$questionaryQuestionOption31->setQuestionid($questionaryQuestion3->getId());
 		$questionaryQuestionOption31->setText($answer1->getText());
 		$questionaryQuestionOption31->setAnswerid($answer1->getId());
-		$questionaryQuestionOption31->setSerialnumber(1);
+		$questionaryQuestionOption31->setOrdernumber(1);
 		$manager->persist($questionaryQuestionOption31);
 
 		$questionaryQuestionOption32 = new QuestionaryQuestionOption();
 		$questionaryQuestionOption32->setQuestionid($questionaryQuestion3->getId());
 		$questionaryQuestionOption32->setText($answer2->getText());
 		$questionaryQuestionOption32->setAnswerid($answer2->getId());
-		$questionaryQuestionOption32->setSerialnumber(2);
+		$questionaryQuestionOption32->setOrdernumber(2);
 		$manager->persist($questionaryQuestionOption32);
 
 		$questionaryQuestionOption33 = new QuestionaryQuestionOption();
 		$questionaryQuestionOption33->setQuestionid($questionaryQuestion3->getId());
 		$questionaryQuestionOption33->setText($answer3->getText());
 		$questionaryQuestionOption33->setAnswerid($answer3->getId());
-		$questionaryQuestionOption33->setSerialnumber(3);
+		$questionaryQuestionOption33->setOrdernumber(3);
 		$manager->persist($questionaryQuestionOption33);
 
 		$manager->flush();
